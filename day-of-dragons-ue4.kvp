@@ -9,7 +9,7 @@ App.CommandLineParameterDelimiter=
 App.CommandLineParameterFormat=-{0}={1}
 App.Compatibility=None
 App.DisplayName=Day of Dragons UE4
-App.EnvironmentVariables={"LD_LIBRARY_PATH": "./linux64:%LD_LIBRARY_PATH%", "SteamAppId": ""}
+App.EnvironmentVariables={"LD_LIBRARY_PATH": "./linux64:%LD_LIBRARY_PATH%", "SteamAppId": "1088090"}
 App.ExecutableLinux=1088320/Dragons/Binaries/Linux/DragonsServer-Linux-Shipping
 App.ExitFile=app_exit.lck
 App.ExitMethod=OS_CLOSE

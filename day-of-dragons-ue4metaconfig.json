@@ -1,7 +1,8 @@
 [
     {
         "ConfigFile": "Dragons/Saved/Config/LinuxServer/Game.ini",
-        "ConfigType": "json",
+        "ConfigType": "ini",
+        "ConfigFormatRegex":"^(?<key>.+?)=(?<value>.*?)$",
         "AutoMap": true
     }
 ]
