@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "Max Players",
-        "Category": "Game Settings",
+        "Category": "Server Settings",
         "Description": "Max players who can join the server.",
         "Keywords": "max,players",
         "FieldName": "iMaxPlayers",
@@ -17,10 +17,10 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Corpse Despawn Time (Seconds)",
-        "Category": "Game Settings",
+        "DisplayName": "Corpse Despawn Time",
+        "Category": "Server Settings",
         "Description": "The seconds until a corpse in game despawns. Keep this pretty low.",
-        "Keywords": "corpse,despawn,time,(seconds)",
+        "Keywords": "corpse,despawn,time",
         "FieldName": "iCorpseDespawnTime",
         "InputType": "number",
         "IsFlagArgument": false,
@@ -37,7 +37,7 @@
         "DisplayName": "Auto Save (Seconds)",
         "Category": "Server Settings",
         "Description": "The seconds between an autosave. This can be intensive at higher player counts.",
-        "Keywords": "auto,save,(seconds)",
+        "Keywords": "auto,save",
         "FieldName": "iAutoSaveSeconds",
         "InputType": "number",
         "IsFlagArgument": false,
@@ -85,10 +85,10 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Max Latency (Ping)",
+        "DisplayName": "Max Latency",
         "Category": "Server Settings",
         "Description": "Players who exceed this are kicked if anticheat is enabled.",
-        "Keywords": "max,latency,(ping)",
+        "Keywords": "max,latency",
         "FieldName": "iMaxLatencyMS",
         "InputType": "number",
         "IsFlagArgument": false,
@@ -262,10 +262,10 @@
         }
     },
     {
-        "DisplayName": "Hard Cap Latency (Ping) Kick",
+        "DisplayName": "Hard Cap Latency Kick",
         "Category": "Server Settings",
         "Description": "Server will automatically kick players if they go over the Max Latency.",
-        "Keywords": "hard,cap,latency,(ping),kick",
+        "Keywords": "hard,cap,latency,kick",
         "FieldName": "bUseLatencyHardCap",
         "InputType": "checkbox",
         "IsFlagArgument": false,
