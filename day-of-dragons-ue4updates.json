@@ -3,7 +3,8 @@
         "UpdateStageName": "Game Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SteamCMD",
-        "UpdateSourceArgs": "1088320",
+        "UpdateSourceArgs": "1088090",
+        "UpdateSourceData":"1088320",
         "UpdateSourceVersion": "Legacy"
     },
     {
