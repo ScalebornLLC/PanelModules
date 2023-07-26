@@ -1,6 +1,6 @@
 [
     {
-        "UpdateStageName": "Downloading Game Files...",
+        "UpdateStageName": "Game Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "",
@@ -9,14 +9,11 @@
         "UpdateSourceTarget": "",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
-        "ForceDownloadPlatform": null,
-        "UpdateSourceConditionSetting": null,
-        "UpdateSourceConditionValue": null,
         "DeleteAfterExtract": true,
         "OneShot": false
     },
     {
-        "UpdateStageName": "Downloading config...",
+        "UpdateStageName": "Config Creation",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/ScalebornLLC/PanelModules/main/configs/day-of-dragonsgame.ini",
@@ -25,9 +22,6 @@
         "UpdateSourceTarget": "Dragons/Saved/Config/LinuxServer/",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
-        "ForceDownloadPlatform": null,
-        "UpdateSourceConditionSetting": null,
-        "UpdateSourceConditionValue": null,
         "DeleteAfterExtract": false,
         "OneShot": false
     }
