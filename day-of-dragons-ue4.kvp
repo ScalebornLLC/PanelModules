@@ -3,14 +3,14 @@ App.AdminMethod=STDIO
 App.AdminPortRef=RemoteAdminPort
 App.ApplicationIPBinding=0.0.0.0
 App.ApplicationReadyMode=RegexMatch
-App.BaseDirectory=./day-of-dragons-ue4/serverfiles/
+App.BaseDirectory=./day-of-dragons-ue4/1088320/
 App.CommandLineArgs=-Port={{$GamePort}} -QueryPort={{$QueryPort}} -SteamServerName="{{SteamServerName}}" -log {{$FormattedArgs}}
 App.CommandLineParameterDelimiter= 
 App.CommandLineParameterFormat=-{0}={1}
 App.Compatibility=None
 App.DisplayName=Day of Dragons UE4
 App.EnvironmentVariables={"LD_LIBRARY_PATH": "./linux64:%LD_LIBRARY_PATH%", "SteamAppId": ""}
-App.ExecutableLinux=serverfiles/DragonsServer-Linux-Shipping
+App.ExecutableLinux=1088320/Dragons/Binaries/Linux/DragonsServer-Linux-Shipping
 App.ExitFile=app_exit.lck
 App.ExitMethod=OS_CLOSE
 App.ExitString=stop
