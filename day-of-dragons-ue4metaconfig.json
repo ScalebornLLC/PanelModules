@@ -1,8 +1,8 @@
 [
     {
-        "ConfigFile": "Dragons/Saved/Config/LinuxServer/Game.ini",
+        "ConfigFile": "Dragons/Saved/Config/LinuxServer/Game.ini", 
+        "AutoMap": true,
         "ConfigType": "ini",
-        "ConfigFormatRegex":"^(?<key>.+?)=(?<value>.*?)$",
-        "AutoMap": true
+        "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$"
     }
 ]
