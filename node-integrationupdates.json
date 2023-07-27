@@ -3,14 +3,14 @@
         "UpdateStageName":"App Directory Creation",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs":"{{$FullBaseDir}}node-app"
+        "UpdateSourceArgs":"{{$FullBaseDir}}app"
     },
     {
         "UpdateStageName":"Application Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"GitRepo",
         "UpdateSourceData":"{{DownloadSource}}",
-        "UpdateSourceTarget":"{{$FullBaseDir}}node-app",
+        "UpdateSourceTarget":"{{$FullBaseDir}}app",
         "UpdateSourceConditionSetting":"DownloadType",
         "UpdateSourceConditionValue":"GitRepo"
     },
@@ -21,7 +21,7 @@
         "UpdateSourceArgs":"{{DownloadSource}}",
         "UpdateSourceData":"{{DownloadFilename}}",
         "UpdateSourceVersion":"{{DownloadVersion}}",
-        "UpdateSourceTarget":"{{$FullBaseDir}}node-app",
+        "UpdateSourceTarget":"{{$FullBaseDir}}app",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
