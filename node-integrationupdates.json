@@ -3,14 +3,14 @@
         "UpdateStageName":"App Directory Creation",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs":"{{$FullBaseDir}}app"
+        "UpdateSourceArgs":"{{$FullBaseDir}}node-app"
     },
     {
         "UpdateStageName":"Application Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"GitRepo",
         "UpdateSourceData":"{{DownloadSource}}",
-        "UpdateSourceTarget":"{{$FullBaseDir}}app",
+        "UpdateSourceTarget":"{{$FullBaseDir}}node-app",
         "UpdateSourceConditionSetting":"DownloadType",
         "UpdateSourceConditionValue":"GitRepo"
     },
@@ -21,7 +21,7 @@
         "UpdateSourceArgs":"{{DownloadSource}}",
         "UpdateSourceData":"{{DownloadFilename}}",
         "UpdateSourceVersion":"{{DownloadVersion}}",
-        "UpdateSourceTarget":"{{$FullBaseDir}}app",
+        "UpdateSourceTarget":"{{$FullBaseDir}}node-app",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
@@ -33,7 +33,7 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"{{DownloadSource}}",
-        "UpdateSourceTarget":"{{$FullBaseDir}}app",
+        "UpdateSourceTarget":"{{$FullBaseDir}}node-app",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
@@ -54,30 +54,14 @@
         "UpdateSourceArch":"x86_64",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd \"{{$FullBaseDir}}\" && rm -Rf \"{{$FullBaseDir}}node/\" && tar xfv node-{{NodeVersion}}-linux-x64.tar.gz > {{$FullBaseDir}}AMPSetupLog.txt 2>&1 && mv -v node-{{NodeVersion}}-linux-x64 node >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1 && rm node-{{NodeVersion}}-linux-x64.tar.gz'"
-    },
-    {
-        "UpdateStageName":"Node.js Download",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSourceArch":"aarch64",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://nodejs.org/download/release/{{NodeVersion}}/node-{{NodeVersion}}-linux-arm64.tar.gz",
-        "UpdateSourceTarget":"{{$FullBaseDir}}"
-    },
-    {
-        "UpdateStageName":"Node.js Extract",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSourceArch":"aarch64",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd \"{{$FullBaseDir}}\" && rm -Rf \"{{$FullBaseDir}}node/\" && tar xfv node-{{NodeVersion}}-linux-arm64.tar.gz > {{$FullBaseDir}}AMPSetupLog.txt 2>&1 && mv -v node-{{NodeVersion}}-linux-arm64 node >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1 && rm node-{{NodeVersion}}-linux-arm64.tar.gz'"
+        "UpdateSourceArgs":"-c 'cd \"{{$FullBaseDir}}\" && rm -Rf \"{{$FullBaseDir}}node/\" && tar xfv node-{{NodeVersion}}-linux-x64.tar.gz > {{$FullBaseDir}}Installer.txt 2>&1 && mv -v node-{{NodeVersion}}-linux-x64 node >> {{$FullBaseDir}}Installer.txt 2>&1 && rm node-{{NodeVersion}}-linux-x64.tar.gz'"
     },
     {
         "UpdateStageName":"npm Packages",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" i {{NpmPackages}} >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1'",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" i {{NpmPackages}} >> {{$FullBaseDir}}Installer.txt 2>&1'",
         "UpdateSourceConditionSetting":"NpmInstallType",
         "UpdateSourceConditionValue":"specify"
     },
@@ -86,7 +70,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" i >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1'",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" i >> {{$FullBaseDir}}Installer.txt 2>&1'",
         "UpdateSourceConditionSetting":"NpmInstallType",
         "UpdateSourceConditionValue":"npmi"
     },
@@ -95,7 +79,7 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" ci >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1'",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" ci >> {{$FullBaseDir}}Installer.txt 2>&1'",
         "UpdateSourceConditionSetting":"NpmInstallType",
         "UpdateSourceConditionValue":"npmci"
     }

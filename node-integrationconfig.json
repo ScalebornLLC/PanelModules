@@ -97,7 +97,7 @@
         "IsFlagArgument":false,
         "ParamFieldName":"DownloadType",
         "IncludeInCommandLine":false,
-        "DefaultValue":"GitRepo",
+        "DefaultValue":"None",
         "EnumValues":{
             "DownloadURL":"Download URL",
             "GithubRelease":"GitHub Release",
@@ -130,7 +130,7 @@
         "ParamFieldName":"DownloadFilename",
         "IncludeInCommandLine":false,
         "DefaultValue":"",
-        "Placeholder":"discordbot.zip",
+        "Placeholder":"example.zip",
         "EnumValues":{}
     },
     {
