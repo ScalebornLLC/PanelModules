@@ -185,8 +185,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -205,8 +205,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -225,8 +225,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -245,8 +245,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -265,8 +265,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -285,12 +285,12 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
-        "DisplayName": "Day of Dragons Anticheat",
+        "DisplayName": "Disable Day of Dragons Anticheat",
         "Category": "Server Settings",
         "Description": "Server will not check for client desync. This can allow cheaters however the built-in anticheat is known for killing legit players as well. Enable with caution...",
         "Keywords": "day,of,dragons,anticheat",
@@ -305,12 +305,12 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
-        "DisplayName": "Game AI",
+        "DisplayName": "Disable Game AI",
         "Category": "Server Settings",
         "Description": "Should AI be allowed?",
         "Keywords": "game,ai",
@@ -325,8 +325,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -345,8 +345,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -365,8 +365,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     },
     {
@@ -385,8 +385,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "true": "True",
-            "false": "False"
+            "true": "true",
+            "false": "false"
         }
     }
 ]
