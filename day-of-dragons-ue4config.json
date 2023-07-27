@@ -170,7 +170,7 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "PvP (Player Vs. Player)",
+        "DisplayName": "Disable PvP (Player Vs. Player)",
         "Category": "Server Settings",
         "Description": "Should player vs player be allowed? If disable, server is set to player vs environment.",
         "Keywords": "pvp,(player,vs.,player)",
@@ -179,14 +179,14 @@
         "IsFlagArgument": false,
         "ParamFieldName": "/Game/_Dev/Runtime/Classes/DragonsGI.DragonsGI_C.bDisablePVP",
         "IncludeInCommandLine": false,
-        "DefaultValue": "true",
-        "Placeholder": "true",
+        "DefaultValue": "false",
+        "Placeholder": "false",
         "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "false": "True",
-            "true": "False"
+            "true": "True",
+            "false": "False"
         }
     },
     {
@@ -305,8 +305,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "false": "True",
-            "true": "False"
+            "true": "True",
+            "false": "False"
         }
     },
     {
@@ -325,8 +325,8 @@
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "false": "True",
-            "true": "False"
+            "true": "True",
+            "false": "False"
         }
     },
     {
