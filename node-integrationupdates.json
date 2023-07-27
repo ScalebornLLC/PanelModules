@@ -33,7 +33,7 @@
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"{{DownloadSource}}",
-        "UpdateSourceTarget":"{{$FullBaseDir}}node-app",
+        "UpdateSourceTarget":"{{$FullBaseDir}}app",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true,
