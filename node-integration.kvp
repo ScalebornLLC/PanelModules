@@ -1,8 +1,8 @@
 App.DisplayName=Node
-App.RootDir=./node-app/
-App.BaseDirectory=./node-app/
-App.ExecutableLinux=./node/bin/node
-App.WorkingDir=app
+App.RootDir=./node/
+App.BaseDirectory=./node/
+App.ExecutableLinux=./bin/node
+App.WorkingDir=node-app
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineArgs="{{$FullBaseDir}}app/{{ApplicationLocation}}/{{ApplicationName}}" {{CommandLineArgs}}
