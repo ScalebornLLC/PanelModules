@@ -8,6 +8,7 @@ These templates are actively used which means more active and frequent updates. 
 2. Click add and enter: ScalebornLLC/PanelModules
 3. Make sure yours looks similar to the below image and click "Fetch Latest".
 
-![image](https://user-images.githubusercontent.com/62557492/216778555-f3266ac1-138c-4deb-a57c-57b98242906f.png)
+![image](https://github.com/ScalebornLLC/PanelModules/assets/140353899/79df986c-6eda-403b-86fa-7707cc835e7d)
+
 
 4. Refresh your page and when you create a new instance you should now see the modules in this github repo.
