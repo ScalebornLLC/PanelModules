@@ -1,0 +1,52 @@
+[
+    {
+        "UpdateStageName": "Loader.py Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/ScalebornLLC/PanelPython/archive/refs/heads/main.zip",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "App Directory Creation",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}app"
+    },
+    {
+        "UpdateStageName": "Application Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "GitRepo",
+        "UpdateSourceData": "{{DownloadSource}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}app",
+        "UpdateSourceConditionSetting": "DownloadType",
+        "UpdateSourceConditionValue": "GitRepo"
+    },
+    {
+        "UpdateStageName": "Application Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceArgs": "{{DownloadSource}}",
+        "UpdateSourceData": "{{DownloadFilename}}",
+        "UpdateSourceVersion": "{{DownloadVersion}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}app",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "UpdateSourceConditionSetting": "DownloadType",
+        "UpdateSourceConditionValue": "GithubRelease"
+    },
+    {
+        "UpdateStageName": "Application Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "{{DownloadSource}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}app",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "UpdateSourceConditionSetting": "DownloadType",
+        "UpdateSourceConditionValue": "DownloadURL"
+    }
+]
